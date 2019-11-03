@@ -8,7 +8,7 @@ from markupsafe import Markup
 app = Flask(__name__)
 @app.route("/") #Specifies directions for http://0.0.0.0:3000/
 def main():
-    return render_template('Home.html') #Home.html is used for this address
+    return render_template('index.html') #Home.html is used for this address
 
 @app.route('/search_results', methods=['POST']) #Specifies directions for http://0.0.0.0:3000/search_results
 def search():
