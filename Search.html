@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+</head>
+<body>
+    <p>
+        {{ output }}
+        <br>
+        <h3>You are currently on Page {{ page }}</h3>
+    </p>
+    <form action="/search_results" method="post">
+        <button id="more">See More Results</button>
+        <h3>Go to Page:<input name="page" value="{{next_page}}" type="number" min="1" max="19"></h3>
+        <!-- The following are the search term and filter data from the home page. They are needed to do subsequent searches, but they can't be edited,
+        so they are hidden from the user -->
+        <input name="search_terms" value='{{search_terms}}' type="hidden">
+        <input name="old_results" value='{{old_results}}' type="hidden">
+        <input name="category" value="{{category}}" type="hidden">
+        <input name="value" value="{{value}}" type="hidden">
+        <input name="year" value="{{year}}" type="hidden">
+        <input name="month" value="{{month}}" type="hidden">
+        <input name="date_type" value="{{date_type}}" type="hidden">
+        <input name="day" value="{{day}}" type="hidden">
+    </form>
+    <p>
+        <h2>Advanced Details on Each Field:</h2>
+        <h3>Page {{ page }} Search Results:</h3>
+        Shows the search results from only the most recent page searched.
+        <h3>Previous Page Search Results:</h3>
+        Will only show up after 2 searches. Shows the search results from every previous search with the current search terms and filters. Note that
+        search terms and filters cannot be changed in between each page search. To change search terms and/or filters, please go back to the Home page.
+        <h3>Go to Page:</h3>
+        Specifies what page should be searched when you hit "See More Results". It's defaulted to 1 + whatever page was just searched, but you can set
+        it to any integer from 1-19. The same page can be searched multiple times if desired, but the same result will be returned each time.
+    </p>
+    <footer>Soham Nagaokar 2019</footer>
+</body>
+</html>
