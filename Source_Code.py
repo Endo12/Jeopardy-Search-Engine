@@ -171,5 +171,7 @@ def index_search(index): #Returns all QA pairs that satisfy the user inputted pa
         display += unique_new_question
     return display
 
+'''
 if __name__ == "__main__": #Specifies host and port that program runs on
     app.run(host = '0.0.0.0', port = 3000)
+'''
