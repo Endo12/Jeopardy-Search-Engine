@@ -51,7 +51,7 @@ packaging==19.0
 pathlib2==2.3.4
 pipenv==2018.11.26
 pkginfo==1.5.0.1
-py==1.8.0
+py==1.10.0
 pycodestyle==2.5.0
 pycosat==0.6.3
 pycparser==2.19
