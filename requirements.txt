@@ -39,7 +39,7 @@ joblib==0.13.2
 json5==0.8.4
 jsonschema==3.0.1
 jupyter==1.0.0
-jupyterlab==1.0.2
+jupyterlab==1.2.21
 libarchive-c==2.8
 lxml==4.3.4
 MarkupSafe==1.1.1
